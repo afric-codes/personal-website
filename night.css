@@ -11,7 +11,7 @@ html {
 
 /*Configure wallpaper image*/
 body {
-    background-image: url("assets/night/Background.jpeg");
+    background-image: url("assets/night/Background.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -40,8 +40,11 @@ img.switch {
     font-size: x-large;
 }
 
+/*This part is probably inefficient because I have to repeat it for each button
+to prevent duplication, but I'm not good enough at web development yet to make it more efficient*/
+
 /*Make the icon text's background blue when the icon is hovered over to emulate a desktop environment.*/
 body:has(#nightday.switch:hover) #nightday.icon_text{
-    background-color: skyblue;
+    background-color:rgb(243, 226, 255);
     border-radius:5px;
 }
