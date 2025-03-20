@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-image: url("assets/day/Background.jpg");
+    background-image: url("assets/night/Background.jpeg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -20,4 +20,7 @@ img.switch {
         drop-shadow(0 2px 0 white)
         drop-shadow(-2px 0 0 white) 
         drop-shadow(0 -2px 0 white);
+}
+.icon_text {
+    text-align: center;
 }

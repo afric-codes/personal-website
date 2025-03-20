@@ -1,3 +1,4 @@
+<!-- document setup -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,12 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>afric's site <3</title>
+    <!-- set stylesheet -->
     <link rel="stylesheet" href="day.css" id="theme">
   </head>
   <body>
     <main>
-        <button class="switch" onclick="switchToDark()"><img src="assets/switch.png" class="switch"></button>
+      <!-- construct desktop icons from html table to align images and descriptor text -->
+      <table>
+        <!--images -->
+        <tr>
+          <!-- day/night switch -->
+          <td><button id="nightday" class="switch" onclick="switchToDark()"><img src="assets/switch.png" class="switch"></button></td>
+        </tr>
+          <!-- descriptor text -->
+          <td><div class="icon_text">day/night</div></td>
+        <tr>
+
+        </tr>
+      </table>
     </main>
+    <!-- set script -->
     <script src="script.js"></script>
   </body>
 </html>
