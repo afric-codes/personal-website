@@ -1,8 +1,10 @@
+//switch to dark mode from light mode when mode switch button double clicked
 function switchToDark() {
     document.getElementById("theme").href = "night.css";
     document.getElementById("nightday").ondblclick = switchToLight;
 }
 
+//switch to light mode from darkmode when mode switch button double clicked
 function switchToLight() {
     // Switch the stylesheet to the day ver
     document.getElementById("theme").href = "day.css";
