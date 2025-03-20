@@ -40,8 +40,8 @@ img.switch {
     font-size: x-large;
 }
 
-/*Make the icon text's background blue when the icon is hovered over to emulate a desktop environment*/
-.switch:hover + .icon_text{
+/*Make the icon text's background blue when the icon is hovered over to emulate a desktop environment.*/
+body:has(#nightday.switch:hover) #nightday.icon_text{
     background-color: skyblue;
-    border-radius: 5px;
+    border-radius:5px;
 }
