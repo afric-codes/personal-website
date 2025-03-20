@@ -9,13 +9,14 @@ html {
     height:100%;
 }
 
-/*Configure wallpaper image*/
+/*Configure wallpaper image and custom cursor*/
 body {
     background-image: url("assets/night/Background.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height:100%;
+    cursor: url("assets/night/cursor_normal.cur"), auto;
 }
 /*Make actual switch invisible since we only want to see the icon inside the switch*/
 button.switch {
@@ -40,10 +41,15 @@ img.switch {
     font-size: x-large;
 }
 
+/*So the cursor doesn't revert back to the system default cursor when hovering over images*/
+.switch:hover {
+    cursor: url("assets/night/cursor_normal.cur"), auto;
+}
+
 /*This part is probably inefficient because I have to repeat it for each button
 to prevent duplication, but I'm not good enough at web development yet to make it more efficient*/
 
-/*Make the icon text's background blue when the icon is hovered over to emulate a desktop environment.*/
+/*Make the icon text's background a different colour when the icon is hovered over to emulate a desktop environment.*/
 body:has(#nightday.switch:hover) #nightday.icon_text{
     background-color:rgb(243, 226, 255);
     border-radius:5px;
