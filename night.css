@@ -1,7 +1,15 @@
+/*Setup local custom font*/
+@font-face {
+    font-family: rainyHearts;
+    src: url(assets/rainyhearts.ttf);
+    font-stretch: ultra-expanded;
+  }  
+
 html {
     height:100%;
 }
 
+/*Configure wallpaper image*/
 body {
     background-image: url("assets/night/Background.jpeg");
     background-position: center;
@@ -9,18 +17,31 @@ body {
     background-repeat: no-repeat;
     height:100%;
 }
+/*Make actual switch invisible since we only want to see the icon inside the switch*/
 button.switch {
     background: none;
     border: none;
 }
+/*Config for desktop icon image*/
 img.switch {
     width:75px;
     height:auto;
+    /*Draw white outline around each transparent image (I stole this off google lol)*/
     filter: drop-shadow(2px 0 0 white) 
         drop-shadow(0 2px 0 white)
         drop-shadow(-2px 0 0 white) 
         drop-shadow(0 -2px 0 white);
 }
+/*Set font settings for the text below each desktop icon*/
 .icon_text {
     text-align: center;
+    color: white;
+    font-family: rainyHearts;
+    font-size: x-large;
+}
+
+/*Make the icon text's background blue when the icon is hovered over to emulate a desktop environment*/
+.switch:hover + .icon_text{
+    background-color: skyblue;
+    border-radius: 5px;
 }
