@@ -1,0 +1,23 @@
+html {
+    height:100%;
+}
+
+body {
+    background-image: url("assets/day/Background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100%;
+}
+button.switch {
+    background: none;
+    border: none;
+}
+img.switch {
+    width:75px;
+    height:auto;
+    filter: drop-shadow(2px 0 0 white) 
+        drop-shadow(0 2px 0 white)
+        drop-shadow(-2px 0 0 white) 
+        drop-shadow(0 -2px 0 white);
+}
