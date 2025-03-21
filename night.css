@@ -58,3 +58,8 @@ body:has(#aboutme.switch:hover) #aboutme.icon_text{
     background-color:rgb(243, 226, 255);
     border-radius:5px;
 }
+
+/*To hide windows that haven't been made visible by the buttons*/
+.hidden {
+    display:none;
+}

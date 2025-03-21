@@ -15,3 +15,7 @@ function switchToLight() {
 function aboutMe(){
     alert("about me")
 }
+
+function gallery(){
+    alert("gallery")
+}
