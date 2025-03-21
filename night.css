@@ -54,3 +54,7 @@ body:has(#nightday.switch:hover) #nightday.icon_text{
     background-color:rgb(243, 226, 255);
     border-radius:5px;
 }
+body:has(#aboutme.switch:hover) #aboutme.icon_text{
+    background-color:rgb(243, 226, 255);
+    border-radius:5px;
+}
