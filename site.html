@@ -33,6 +33,18 @@
               <img src="assets/polaroid.png" class="switch">
             </button>
           </td>
+          <!-- contact button -->
+          <td>
+            <button id="contact" class="switch" ondblclick="contact()">
+              <img src="assets/star.png" class="switch">
+            </button>
+          </td>
+          <!-- readme button -->
+          <td>
+            <button id="readme" class="switch" ondblclick="readme()">
+              <img src="assets/paper.png" class="switch">
+            </button>
+          </td>
         </tr>
         <!-- descriptor text -->
         <tr>
@@ -48,9 +60,83 @@
           <td>
             <div id="gallery" class="icon_text">gallery</div>
           </td>
+          <!-- contact button -->
+          <td>
+            <div id="contact" class="icon_text">contact</div>
+          </td>
+          <!-- readme button -->
+          <td>
+            <div id="readme" class="icon_text">README</div>
+          </td>
         </tr>
       </table>
-      <div id="aboutme" class="hidden">test</div>
+      <!--window for aboutme-->
+      <div id="aboutme_window" class="window">
+        <!--window header-->
+        <div id="aboutme_header" class="window_header">
+          about me ^w^
+          <!-- X icon to close window -->
+          <button class="window_close" onclick="close_aboutme()">X</button>
+        </div>
+        <!--window contents-->
+        <p>this is my about me page :3</p>
+        <p>hey, my name is afric! i love coding, music and films :D</p>
+        <p>my favourite film is scott pilgrim vs the world</p>
+        <p>i also love to read (especially mysteries) <33</p>
+        <p>my favourite subject in school is history</p>
+        <p>i love games and 100%ed botw!!</p>
+      </div>
+
+      <!--window for gallery-->
+      <div id="gallery_window" class="window">
+        <!--window header-->
+        <div id="gallery_window_header" class="window_header">
+          gallery !!
+          <!-- X icon to close window -->
+          <button class="window_close" onclick="close_gallery()">X</button>
+        </div>
+        <!--window contents-->
+        <p>this is my gallery page !! </p>
+        <img id="gallery_current"src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.rollingstone.com%2Fwp-content%2Fuploads%2F2023%2F09%2FRyanClemens-ChappellRoan-BeautyQueen-4-2.jpeg%3Fw%3D1581%26h%3D1054%26crop%3D1&f=1&nofb=1&ipt=11ea470de54d381fbbc9aeb2526695bdb4c8110bf42a8a0915e0772b5d8104db&ipo=images">
+        <button class="gallery" id="gallery_left" onclick="galleryLeft()"><-</button>
+        <button class="gallery" id="gallery_right" onclick="galleryRight()">-></button>
+        <p id="gallery_desc"class="description">my queen chappell i love her come to dublin please</p>
+      </div>
+
+      <!--window for contact-->
+      <div id="contact_window" class="window">
+        <!--window header-->
+        <div id="contact_window_header" class="window_header">
+          contact me >.<
+          <!-- X icon to close window -->
+          <button class="window_close" onclick="close_contact()">X</button>
+        </div>
+        <!--window contents-->
+        <p>have a question? contact me on one of my socials!</p>
+        <!--contact hyperlinks-->
+        <a class="contact" href="https://github.com/afric-codes"><img class="contact" src="assets/github.png"></a>
+        <a class="contact" href="https://letterboxd.com/wokeismrunamok/"><img class="contact" src="assets/letterboxd.png"></a>
+        <a class="contact" href="https://www.goodreads.com/user/show/176367429"><img class="contact" src="assets/goodreads.png"></a>
+        <a class="contact" href="mailto:afriic@proton.me"><img class="contact" src="assets/email.png"></a>
+      </div>
+
+      <!--window for readme-->
+      <div id="readme_window" class="window">
+        <!--window header-->
+        <div id="readme_header" class="window_header">
+          README
+          <!-- X icon to close window -->
+          <button class="window_close" onclick="close_readme()">X</button>
+        </div>
+        <!--window contents-->
+        <p>this is my final project for the mpt web design module!</p>
+        <p>this website is meant to emulate a retro desktop (think windows 98)</p>
+        <p>...but, of course, with my own personal twist!</p>
+        <p>i worked really hard on making this website cute & unique,</p>
+        <p>and i learned a lot making it!</p>
+        <a href="https://github.com/afric-codes/personal-website/tree/main">click here to view the project on github!</a>
+      </div>
+
     </main>
     <!-- set script -->
     <script src="script.js"></script>

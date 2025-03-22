@@ -9,7 +9,7 @@ html {
     height:100%;
 }
 
-/*Configure wallpaper and cursor image*/
+/*Configure wallpaper image and custom cursor*/
 body {
     background-image: url("assets/day/Background.jpg");
     background-position: center;
@@ -17,6 +17,9 @@ body {
     background-repeat: no-repeat;
     height:100%;
     cursor: url("assets/day/cursor_normal.cur"), auto;
+    color: white;
+    font-family: rainyHearts;
+    font-size: x-large;
 }
 /*Make actual switch invisible since we only want to see the icon inside the switch*/
 button.switch {
@@ -36,21 +39,107 @@ img.switch {
 /*Set font settings for the text below each desktop icon*/
 .icon_text {
     text-align: center;
-    color: white;
-    font-family: rainyHearts;
-    font-size: x-large;
-}
-
-/*So the cursor doesn't revert back to the system default cursor when hovering over images*/
-.switch:hover {
-    cursor: url("assets/day/cursor_normal.cur"), auto;
 }
 
 /*This part is probably inefficient because I have to repeat it for each button
 to prevent duplication, but I'm not good enough at web development yet to make it more efficient*/
 
-/*Make the icon text's background blue when the icon is hovered over to emulate a desktop environment.*/
+/*Make the icon text's background a different colour when the icon is hovered over to emulate a desktop environment.*/
 body:has(#nightday.switch:hover) #nightday.icon_text{
-    background-color:rgb(202, 229, 255);
+    background-color:rgb(208, 221, 247);
     border-radius:5px;
+}
+body:has(#aboutme.switch:hover) #aboutme.icon_text{
+    background-color:rgb(208, 221, 247);
+    border-radius:5px;
+}
+
+body:has(#gallery.switch:hover) #gallery.icon_text{
+    background-color:rgb(208, 221, 247);
+    border-radius:5px;
+}
+
+body:has(#contact.switch:hover) #contact.icon_text{
+    background-color:rgb(208, 221, 247);
+    border-radius:5px;
+}
+
+body:has(#readme.switch:hover) #readme.icon_text{
+    background-color:rgb(208, 221, 247);
+    border-radius:5px;
+}
+
+/*container window styling*/
+.window {
+    display:none;
+    background-color: white;
+    position:absolute;
+    color:black;
+}
+
+/*window header styling*/
+.window_header {
+    background-color: rgb(140, 187, 241);
+    position:absolute;
+    color:white;
+    width:100%;
+}
+/*styling x to close window*/
+.window_close {
+    float:right;
+    display:inline;
+    border:none;
+    background-color: rgb(226, 226, 255);
+    font-family: rainyHearts;
+    font-size:x-large;
+    color:black;
+}
+
+/*so cursor stays as custom when hovering over buttons*/
+button:hover {
+    cursor: url("assets/day/cursor_normal.cur"), auto;
+}
+
+/*style gallery buttons*/
+.gallery {
+    display:inline;
+    border:none;
+    background-color:white;
+    color:rgb(140, 187, 241);
+    font-family:rainyHearts;
+    font-size:x-large;
+    margin-top:150px;
+}
+
+/*style gallery left/right arrow buttons*/
+#gallery_left {
+    float:left;
+}
+
+#gallery_right {
+    float:right;
+}
+
+/*style desc text for gallery images*/
+.description {
+    color:rgb(184, 184, 184);
+    text-align: center;
+    font-size: large;
+}
+
+/*style gallery images*/
+#gallery_current {
+    height:350px;
+    border-radius: 15px;
+}
+/*style contact hyperlink images*/
+.contact {
+    height:100px;
+    display:inline;
+    margin:auto;
+}
+
+/*so cursor stays custom when hovering over contact hyperlinks*/
+.contact:hover {
+    cursor:url("assets/day/cursor_normal.cur"), auto;
 }
