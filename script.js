@@ -35,13 +35,15 @@ function close_gallery(){
 //gallery handling
 //set list of gallery images
 const galleryimages = [
-    "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.rollingstone.com%2Fwp-content%2Fuploads%2F2023%2F09%2FRyanClemens-ChappellRoan-BeautyQueen-4-2.jpeg%3Fw%3D1581%26h%3D1054%26crop%3D1&f=1&nofb=1&ipt=11ea470de54d381fbbc9aeb2526695bdb4c8110bf42a8a0915e0772b5d8104db&ipo=images",
-    "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimgix.ranker.com%2Flist_img_v2%2F9090%2F3189090%2Foriginal%2F3189090&f=1&nofb=1&ipt=325aea64031984ad55f93f494634f6e8a07da9748ddbd718c4ccb6aeaa4e8dad&ipo=images",
-    "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp6297184.jpg&f=1&nofb=1&ipt=120d93473e5a22f7496f92150913cb7985eda7b94268dd7d31764742cd2d7a53&ipo=images",
-    "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F1237873.jpg&f=1&nofb=1&ipt=9929c0edfc2e8b59ea0c45822ea4f5fa503fae0590f903b5d9c7c25966451f3b&ipo=images"
+    "assets/chappell.jpeg",
+    "assets/fortnite.png",
+    "assets/severance.jpeg",
+    "assets/botw.jpg",
+    "assets/lis.jpg"
 ];
 //set list of gallery descriptions
 const gallerydescriptions = ["my queen chappell i love her come to dublin please",
+    "the time i won a game of fortnite on the ucc lab computers (proudest of my life)",
     "severance best tv show oat fight me solos succession", "my fav game i got all the koroks",
     "i love life is strange sm. the lesbians of all time"];
 //current selected image - default is 0
@@ -50,7 +52,7 @@ var currentimage = 0;
 function galleryRight() {
     currentimage += 1
     //prevent overflow
-    if (currentimage > 3) {
+    if (currentimage > 4) {
         currentimage = 0;
     };
     document.getElementById("gallery_current").src=galleryimages[currentimage];
@@ -62,7 +64,7 @@ function galleryLeft() {
     currentimage -= 1
     //prevent underflow
     if (currentimage < 0) {
-        currentimage = 3;
+        currentimage = 4;
     };
     document.getElementById("gallery_current").src=galleryimages[currentimage];
     document.getElementById("gallery_desc").innerHTML=gallerydescriptions[currentimage];
