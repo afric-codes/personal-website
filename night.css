@@ -59,6 +59,16 @@ body:has(#gallery.switch:hover) #gallery.icon_text{
     border-radius:5px;
 }
 
+body:has(#contact.switch:hover) #contact.icon_text{
+    background-color:rgb(243, 226, 255);
+    border-radius:5px;
+}
+
+body:has(#readme.switch:hover) #readme.icon_text{
+    background-color:rgb(243, 226, 255);
+    border-radius:5px;
+}
+
 /*container window styling*/
 .window {
     display:none;
@@ -117,7 +127,19 @@ button:hover {
     font-size: large;
 }
 
-/*so images dont stretch*/
+/*style gallery images*/
 #gallery_current {
     height:350px;
+    border-radius: 15px;
+}
+/*style contact hyperlink images*/
+.contact {
+    height:100px;
+    display:inline;
+    margin:auto;
+}
+
+/*so cursor stays custom when hovering over contact hyperlinks*/
+.contact:hover {
+    cursor:url("assets/night/cursor_normal.cur"), auto;
 }
